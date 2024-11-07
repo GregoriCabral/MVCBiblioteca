@@ -1,0 +1,23 @@
+﻿@model Reserva
+
+<form asp-controller="Reserva" asp-action="InserirReserva" method="post">
+
+    <div class="mb-3 col-md-2">
+        <label for="livro" class="form-label">Livro:</label>
+        <input type="text" asp-for="Livro" class="form-control" id="livro" placeholder="Informe o Livro" required />
+    </div>
+    <div class="mb-3 col-md-2">
+        <label for="pessoa" class="form-label">Pessoa: </label>
+        <input type="text" asp-for="Pessoa" class="form-control col-4" id="pessoa" placeholder="Informe o Nome" required />
+    </div>
+    <div class="mb-3 col-md-2">
+        <label for="quando" class="form-label">Quando:</label>
+        <input type="date" asp-for="Quando" class="form-control" id="quando" placeholder="Data da Reserva" required />
+    </div>
+    <div class="mb-3 col-md-2">
+        <label for="devolucao" class="form-label">Devolução:</label>
+        <input type="date" asp-for="Devolucao" class="form-control" id="devolucao" placeholder="Data da Devolução" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+
+</form>
